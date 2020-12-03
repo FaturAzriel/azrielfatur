@@ -1,8 +1,5 @@
 
-setTimeout( function(){
-        const backInLeft = document.querySelector('.d-none');
-        backInLeft.classList.remove('d-none');
-    }, window.addEventListener('load',function(){
-        document.querySelector('body').classList.add("loaded");
-    })
-);
+$(document).ready(function() {
+    $("body").addClass('loaded');
+    $('.animate__animated').removeClass('d-none');
+});
